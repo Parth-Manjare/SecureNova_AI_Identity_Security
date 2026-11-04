@@ -258,8 +258,8 @@
           },
           {
             "position": {
-              "x": 540,
-              "y": 55
+              "x": 520,
+              "y": 105.00000000000023
             },
             "size": {
               "width": 280,
@@ -378,8 +378,8 @@
           },
           {
             "position": {
-              "x": 800,
-              "y": 80
+              "x": 860,
+              "y": 130.00000000000023
             },
             "size": {
               "width": 190,
@@ -491,12 +491,15 @@
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
-            }
+            },
+            "children": [
+              "e7e4ac03-9ebf-426e-a3e9-3d1ffec0a519"
+            ]
           },
           {
             "position": {
-              "x": 1160,
-              "y": 130.00000000000023
+              "x": 1150,
+              "y": 115.00000000000023
             },
             "size": {
               "width": 160,
@@ -1168,8 +1171,60 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
+              "name": "0Auth Access Token ",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "0Auth Access Token "
+            ],
+            "id": "cdfbb337-ceb6-4fc8-9339-4ddf0163ade1",
+            "source": {
+              "cell": "de54d648-737b-4f42-bd93-b0d929fdbdaa",
+              "port": "b33ca1ed-56cb-481c-af60-529595e017de"
+            },
+            "target": {
+              "cell": "34f05363-de74-4131-af15-99bdededc741",
+              "port": "3ccfc94f-5513-4bf1-8ee7-7355cb13c526"
+            },
+            "vertices": [
+              {
+                "x": 705,
+                "y": 60
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
               "name": "Customer Support Request ",
-              "description": "Customer submits a support request or query to the AI agent through the customer service application. The request may contain personal or order-related information.",
+              "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -1184,25 +1239,262 @@
             "labels": [
               "Customer Support Request "
             ],
-            "id": "ff52998f-b14c-4b3d-be2c-f58f4edc94c0",
+            "id": "0bcdccbd-6eef-46f5-b16d-bc00fa4cb989",
             "source": {
               "x": 260,
               "y": -30
             },
             "target": {
-              "x": 590,
-              "y": 160
-            },
-            "vertices": [
-              {
-                "x": 310,
-                "y": 100
-              },
-              {
-                "x": 380,
-                "y": 120
+              "x": 570,
+              "y": 210
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
               }
-            ]
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "LLM Prompt and Request ",
+              "description": "AI agent sends user prompts and relevant context to the external LLM provider using an API credential. The provider processes the request and returns a generated response.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "LLM Prompt and Request "
+            ],
+            "id": "d76cb1a0-78f2-40f6-8ec4-c7279eae7706",
+            "source": {
+              "x": 725,
+              "y": 130
+            },
+            "target": {
+              "cell": "ca005d16-91b8-467b-846f-fc41c8f1fcf0",
+              "port": "4ed789ab-f7ad-4cf3-b25e-3ffe06c50441"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Knowledge Retrieval Request  ",
+              "description": "AI agent sends a knowledge retrieval query to the RAG pipeline to obtain relevant information from the enterprise knowledge base.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Knowledge Retrieval Request  "
+            ],
+            "id": "8fe1c6be-d76a-4c07-bac9-3d5ff6ed43ed",
+            "source": {
+              "x": 1050,
+              "y": 200
+            },
+            "target": {
+              "x": 1180,
+              "y": 140
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           }
         ]
       }
