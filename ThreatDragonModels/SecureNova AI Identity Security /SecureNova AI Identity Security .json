@@ -40,6 +40,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -123,7 +124,6 @@
               ]
             },
             "id": "a7052af0-0ad1-4c8b-9541-412a52414fa4",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Customer/Human User ",
@@ -157,6 +157,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -240,7 +241,6 @@
               ]
             },
             "id": "de54d648-737b-4f42-bd93-b0d929fdbdaa",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "Auth0 Identity Provider ",
@@ -254,13 +254,126 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 940,
+              "y": -150
             },
-            "tools": {
+            "size": {
+              "width": 280,
+              "height": 180
+            },
+            "attrs": {
+              "text": {
+                "text": "AI Agent / Orchestrator"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
               "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
+                {
+                  "group": "top",
+                  "id": "3ccfc94f-5513-4bf1-8ee7-7355cb13c526"
+                },
+                {
+                  "group": "right",
+                  "id": "50e289a2-ff28-44c8-bb97-25c9658d84ee"
+                },
+                {
+                  "group": "bottom",
+                  "id": "2452231d-7260-4c23-bf3e-1efeaad069a7"
+                },
+                {
+                  "group": "left",
+                  "id": "877a2f8b-2465-4e44-8891-1d40e6ef863d"
+                }
+              ]
+            },
+            "id": "34f05363-de74-4131-af15-99bdededc741",
+            "zIndex": 3,
+            "data": {
+              "type": "tm.Process",
+              "name": "AI Agent / Orchestrator",
+              "description": "LLM-powered agent that processes customer requests, coordinates RAG retrieval, invokes MCP tools, and communicates with internal REST APIs using controlled service identities.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
             }
           }
         ]
