@@ -244,7 +244,7 @@
             "data": {
               "type": "tm.Process",
               "name": "Auth0 Identity Provider ",
-              "description": "",
+              "description": "Central Identity Provider responsible for customer authentication, OAuth 2.0 and OpenID Connect (OIDC), access token issuance, Multi-Factor Authentication (MFA), role-based access control (RBAC), and identity management.",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
