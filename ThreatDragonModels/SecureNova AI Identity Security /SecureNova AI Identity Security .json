@@ -258,8 +258,8 @@
           },
           {
             "position": {
-              "x": 940,
-              "y": -150
+              "x": 540,
+              "y": 55
             },
             "size": {
               "width": 280,
@@ -379,7 +379,7 @@
           {
             "position": {
               "x": 800,
-              "y": 130
+              "y": 80
             },
             "size": {
               "width": 190,
@@ -495,8 +495,8 @@
           },
           {
             "position": {
-              "x": 1190,
-              "y": 115
+              "x": 1160,
+              "y": 130.00000000000023
             },
             "size": {
               "width": 160,
@@ -612,6 +612,597 @@
               "privilegeLevel": "",
               "threats": []
             }
+          },
+          {
+            "position": {
+              "x": 1135,
+              "y": 290
+            },
+            "size": {
+              "width": 270,
+              "height": 100
+            },
+            "attrs": {
+              "text": {
+                "text": "Vector Database"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "9177a3d2-e53e-4e9b-88f5-96148fbd2ee9"
+                },
+                {
+                  "group": "right",
+                  "id": "65b291ae-2180-43de-8cf2-3431f93f6241"
+                },
+                {
+                  "group": "bottom",
+                  "id": "4cabeee6-9269-4c97-9f16-5c4d1e354566"
+                },
+                {
+                  "group": "left",
+                  "id": "7abe17f7-3d4d-4b2a-a6e8-cddd52359712"
+                }
+              ]
+            },
+            "id": "58ffedaa-d170-4536-a9f3-3734c3d1babd",
+            "zIndex": 6,
+            "data": {
+              "type": "tm.Store",
+              "name": "Vector Database",
+              "description": "Stores vector embeddings and indexed knowledge chunks used by the RAG pipeline for semantic retrieval.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 790,
+              "y": 260
+            },
+            "size": {
+              "width": 230,
+              "height": 160
+            },
+            "attrs": {
+              "text": {
+                "text": "MCP Server"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "3ccfc94f-5513-4bf1-8ee7-7355cb13c526"
+                },
+                {
+                  "group": "right",
+                  "id": "50e289a2-ff28-44c8-bb97-25c9658d84ee"
+                },
+                {
+                  "group": "bottom",
+                  "id": "2452231d-7260-4c23-bf3e-1efeaad069a7"
+                },
+                {
+                  "group": "left",
+                  "id": "877a2f8b-2465-4e44-8891-1d40e6ef863d"
+                }
+              ]
+            },
+            "id": "544c5951-292f-4ea9-bd90-7a0430f6325e",
+            "zIndex": 7,
+            "data": {
+              "type": "tm.Process",
+              "name": "MCP Server",
+              "description": "Model Context Protocol server that exposes approved tools to the AI agent and communicates with internal REST APIs using scoped service credentials.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 910,
+              "y": 451.0000000000002
+            },
+            "size": {
+              "width": 340,
+              "height": 160
+            },
+            "attrs": {
+              "text": {
+                "text": "Internal REST API"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "3ccfc94f-5513-4bf1-8ee7-7355cb13c526"
+                },
+                {
+                  "group": "right",
+                  "id": "50e289a2-ff28-44c8-bb97-25c9658d84ee"
+                },
+                {
+                  "group": "bottom",
+                  "id": "2452231d-7260-4c23-bf3e-1efeaad069a7"
+                },
+                {
+                  "group": "left",
+                  "id": "877a2f8b-2465-4e44-8891-1d40e6ef863d"
+                }
+              ]
+            },
+            "id": "74192d47-b35f-49d1-a792-ad0e3deb14cd",
+            "zIndex": 8,
+            "data": {
+              "type": "tm.Process",
+              "name": "Internal REST API",
+              "description": "Internal enterprise API responsible for customer records, order information, and support operations. Requires authenticated and authorized requests.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 940,
+              "y": 691
+            },
+            "size": {
+              "width": 300,
+              "height": 160
+            },
+            "attrs": {
+              "text": {
+                "text": "Audit Logs / SIEM"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "9177a3d2-e53e-4e9b-88f5-96148fbd2ee9"
+                },
+                {
+                  "group": "right",
+                  "id": "65b291ae-2180-43de-8cf2-3431f93f6241"
+                },
+                {
+                  "group": "bottom",
+                  "id": "4cabeee6-9269-4c97-9f16-5c4d1e354566"
+                },
+                {
+                  "group": "left",
+                  "id": "7abe17f7-3d4d-4b2a-a6e8-cddd52359712"
+                }
+              ]
+            },
+            "id": "1cafc0a4-a2a2-41d8-b56f-6cdd59cc952b",
+            "zIndex": 9,
+            "data": {
+              "type": "tm.Store",
+              "name": "Audit Logs / SIEM",
+              "description": "Centralized security logging and monitoring system that records authentication events, token issuance, AI agent activities, MCP tool invocations, API access, authorization failures, and suspicious identity events for audit and anomaly detection.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Customer login credentials ",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Customer login credentials "
+            ],
+            "id": "4bcd5370-678b-4eca-a789-db2e88799036",
+            "source": {
+              "cell": "a7052af0-0ad1-4c8b-9541-412a52414fa4",
+              "port": "e59839c0-01c7-4093-a314-7bd06bdf7131"
+            },
+            "target": {
+              "x": 620,
+              "y": -60
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Customer Support Request ",
+              "description": "Customer submits a support request or query to the AI agent through the customer service application. The request may contain personal or order-related information.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Customer Support Request "
+            ],
+            "id": "ff52998f-b14c-4b3d-be2c-f58f4edc94c0",
+            "source": {
+              "x": 260,
+              "y": -30
+            },
+            "target": {
+              "x": 590,
+              "y": 160
+            },
+            "vertices": [
+              {
+                "x": 310,
+                "y": 100
+              },
+              {
+                "x": 380,
+                "y": 120
+              }
+            ]
           }
         ]
       }
