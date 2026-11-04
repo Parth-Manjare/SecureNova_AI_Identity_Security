@@ -21,6 +21,181 @@
         "cells": [
           {
             "position": {
+              "x": 110,
+              "y": -130
+            },
+            "size": {
+              "width": 310,
+              "height": 140
+            },
+            "attrs": {
+              "label": {
+                "text": "TB 1 - External User Zone"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "82d94e08-c63c-44d7-94b6-0a7e74d7fc4b",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "TB 1 - External User Zone",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "4bcd5370-678b-4eca-a789-db2e88799036"
+              ],
+              "containedElements": [
+                "a7052af0-0ad1-4c8b-9541-412a52414fa4"
+              ]
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            }
+          },
+          {
+            "position": {
+              "x": 560,
+              "y": -203.99999999999946
+            },
+            "size": {
+              "width": 230,
+              "height": 210
+            },
+            "attrs": {
+              "label": {
+                "text": "TB 2 - Identity Provider Zone "
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "479ba443-aff6-4979-8ffd-8a6f46aa24db",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "TB 2 - Identity Provider Zone ",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "4bcd5370-678b-4eca-a789-db2e88799036",
+                "cdfbb337-ceb6-4fc8-9339-4ddf0163ade1"
+              ],
+              "containedElements": [
+                "de54d648-737b-4f42-bd93-b0d929fdbdaa"
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 409.99999999999955,
+              "y": 95.00000000000205
+            },
+            "size": {
+              "width": 710,
+              "height": 450
+            },
+            "attrs": {
+              "label": {
+                "text": "TB 3 - AI Application "
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "496185b0-727d-4e8b-9688-7aaeec9496ae",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "TB 3 - AI Application ",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "d76cb1a0-78f2-40f6-8ec4-c7279eae7706",
+                "0bcdccbd-6eef-46f5-b16d-bc00fa4cb989",
+                "aecdcf79-795a-49be-9cd7-45a8a5a875f5",
+                "cdfbb337-ceb6-4fc8-9339-4ddf0163ade1",
+                "cddd7143-3628-4ffb-abb6-60b54b935259"
+              ],
+              "containedElements": [
+                "34f05363-de74-4131-af15-99bdededc741",
+                "ace38ae9-a1b6-4ac0-a2cf-f03690611d42",
+                "58ffedaa-d170-4536-a9f3-3734c3d1babd",
+                "544c5951-292f-4ea9-bd90-7a0430f6325e"
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 906,
+              "y": -174.99999999999966
+            },
+            "size": {
+              "width": 350,
+              "height": 190
+            },
+            "attrs": {
+              "label": {
+                "text": "TB 4 - External LLM"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "5d90baee-e308-4d76-adff-dfe18c72205e",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "TB 4 - External LLM",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "d76cb1a0-78f2-40f6-8ec4-c7279eae7706"
+              ],
+              "containedElements": [
+                "ca005d16-91b8-467b-846f-fc41c8f1fcf0"
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 628.9999999999998,
+              "y": 630.0000000000019
+            },
+            "size": {
+              "width": 720,
+              "height": 280
+            },
+            "attrs": {
+              "label": {
+                "text": "TB 5 - Enterprise Backend "
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "f415fc85-533e-41a9-b70e-22e18d53c22f",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "TB 5 - Enterprise Backend ",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "935cd83f-74c8-4ad6-8771-eedead34a671"
+              ],
+              "containedElements": [
+                "1cafc0a4-a2a2-41d8-b56f-6cdd59cc952b"
+              ]
+            }
+          },
+          {
+            "position": {
               "x": 150,
               "y": -90
             },
@@ -258,8 +433,8 @@
           },
           {
             "position": {
-              "x": 520,
-              "y": 105.00000000000023
+              "x": 540,
+              "y": 130
             },
             "size": {
               "width": 180,
@@ -379,7 +554,7 @@
           {
             "position": {
               "x": 980,
-              "y": -4.999999999999773
+              "y": -130
             },
             "size": {
               "width": 190,
@@ -498,8 +673,8 @@
           },
           {
             "position": {
-              "x": 995,
-              "y": 180
+              "x": 850,
+              "y": 200
             },
             "size": {
               "width": 120,
@@ -618,8 +793,8 @@
           },
           {
             "position": {
-              "x": 1210,
-              "y": 370
+              "x": 790,
+              "y": 390
             },
             "size": {
               "width": 270,
@@ -742,8 +917,8 @@
           },
           {
             "position": {
-              "x": 630,
-              "y": 410
+              "x": 560,
+              "y": 380
             },
             "size": {
               "width": 160,
@@ -862,8 +1037,8 @@
           },
           {
             "position": {
-              "x": 510,
-              "y": 620
+              "x": 594.9999999999995,
+              "y": 690
             },
             "size": {
               "width": 340,
@@ -1124,166 +1299,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "API Security Audit logs ",
-              "description": "Internal REST API sends security audit events, including API access attempts, authorization failures, identity information and operation results, to centralized logging and monitoring infrastructure.",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "API Security Audit logs "
-            ],
-            "id": "935cd83f-74c8-4ad6-8771-eedead34a671",
-            "source": {
-              "x": 670,
-              "y": 780
-            },
-            "target": {
-              "cell": "1cafc0a4-a2a2-41d8-b56f-6cdd59cc952b",
-              "port": "7abe17f7-3d4d-4b2a-a6e8-cddd52359712"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Vector Search Query ",
-              "description": "RAG pipeline generates embeddings and sends vector similarity search queries to the vector database to retrieve relevant knowledge chunks.",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Vector Search Query "
-            ],
-            "id": "8856d92b-dfc1-4ec3-b5b3-e0d8ba56e14c",
-            "source": {
-              "cell": "ace38ae9-a1b6-4ac0-a2cf-f03690611d42",
-              "port": "50e289a2-ff28-44c8-bb97-25c9658d84ee"
-            },
-            "target": {
-              "cell": "58ffedaa-d170-4536-a9f3-3734c3d1babd",
-              "port": "7abe17f7-3d4d-4b2a-a6e8-cddd52359712"
-            },
-            "vertices": [
-              {
-                "x": 1170,
-                "y": 330
-              }
-            ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Knowledge Retrieval Request ",
-              "description": "AI agent sends a knowledge retrieval query to the RAG pipeline to obtain relevant information from the enterprise knowledge base.",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Knowledge Retrieval Request "
-            ],
-            "id": "eb8edf53-bcae-4045-b5d6-6d20a474820a",
-            "source": {
-              "cell": "34f05363-de74-4131-af15-99bdededc741",
-              "port": "50e289a2-ff28-44c8-bb97-25c9658d84ee"
-            },
-            "target": {
-              "cell": "ace38ae9-a1b6-4ac0-a2cf-f03690611d42",
-              "port": "2452231d-7260-4c23-bf3e-1efeaad069a7"
-            },
-            "vertices": [
-              {
-                "x": 880,
-                "y": 300
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "LLM Prompt and Request ",
               "description": "AI agent sends user prompts and relevant context to the external LLM provider using an API credential. The provider processes the request and returns a generated response.",
               "outOfScope": false,
@@ -1295,7 +1310,10 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "496185b0-727d-4e8b-9688-7aaeec9496ae",
+                "5d90baee-e308-4d76-adff-dfe18c72205e"
+              ]
             },
             "labels": [
               "LLM Prompt and Request "
@@ -1311,8 +1329,8 @@
             },
             "vertices": [
               {
-                "x": 860,
-                "y": 100
+                "x": 880,
+                "y": 130
               }
             ]
           },
@@ -1347,15 +1365,17 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "496185b0-727d-4e8b-9688-7aaeec9496ae"
+              ]
             },
             "labels": [
               "Customer Support Request "
             ],
             "id": "0bcdccbd-6eef-46f5-b16d-bc00fa4cb989",
             "source": {
-              "x": 260,
-              "y": -30
+              "x": 280,
+              "y": 0
             },
             "target": {
               "cell": "34f05363-de74-4131-af15-99bdededc741",
@@ -1363,8 +1383,8 @@
             },
             "vertices": [
               {
-                "x": 470,
-                "y": 180
+                "x": 490,
+                "y": 210
               }
             ]
           },
@@ -1415,12 +1435,12 @@
             },
             "vertices": [
               {
-                "x": 658,
-                "y": 350
+                "x": 498,
+                "y": 360
               },
               {
-                "x": 870,
-                "y": 350
+                "x": 710,
+                "y": 360
               }
             ]
           },
@@ -1455,7 +1475,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "496185b0-727d-4e8b-9688-7aaeec9496ae"
+              ]
             },
             "labels": [
               "Authenticated API Request "
@@ -1475,8 +1497,8 @@
                 "y": 550
               },
               {
-                "x": 970,
-                "y": 520
+                "x": 920,
+                "y": 580
               },
               {
                 "x": 920,
@@ -1515,7 +1537,10 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "82d94e08-c63c-44d7-94b6-0a7e74d7fc4b",
+                "479ba443-aff6-4979-8ffd-8a6f46aa24db"
+              ]
             },
             "labels": [
               "Customer login credentials "
@@ -1575,7 +1600,10 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "479ba443-aff6-4979-8ffd-8a6f46aa24db",
+                "496185b0-727d-4e8b-9688-7aaeec9496ae"
+              ]
             },
             "labels": [
               "0Auth Access Token "
@@ -1591,10 +1619,159 @@
             },
             "vertices": [
               {
-                "x": 705,
-                "y": 60
+                "x": 725,
+                "y": 90
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Knowledge Retrieval Request ",
+              "description": "AI agent sends a knowledge retrieval query to the RAG pipeline to obtain relevant information from the enterprise knowledge base.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Knowledge Retrieval Request "
+            ],
+            "id": "eb8edf53-bcae-4045-b5d6-6d20a474820a",
+            "source": {
+              "cell": "34f05363-de74-4131-af15-99bdededc741",
+              "port": "50e289a2-ff28-44c8-bb97-25c9658d84ee"
+            },
+            "target": {
+              "cell": "ace38ae9-a1b6-4ac0-a2cf-f03690611d42",
+              "port": "2452231d-7260-4c23-bf3e-1efeaad069a7"
+            },
+            "vertices": [
+              {
+                "x": 740,
+                "y": 330
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Vector Search Query ",
+              "description": "RAG pipeline generates embeddings and sends vector similarity search queries to the vector database to retrieve relevant knowledge chunks.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "496185b0-727d-4e8b-9688-7aaeec9496ae"
+              ]
+            },
+            "labels": [
+              "Vector Search Query "
+            ],
+            "id": "cddd7143-3628-4ffb-abb6-60b54b935259",
+            "source": {
+              "x": 970,
+              "y": 250
+            },
+            "target": {
+              "cell": "58ffedaa-d170-4536-a9f3-3734c3d1babd",
+              "port": "65b291ae-2180-43de-8cf2-3431f93f6241"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "API Security Audit logs ",
+              "description": "Internal REST API sends security audit events, including API access attempts, authorization failures, identity information and operation results, to centralized logging and monitoring infrastructure.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "f415fc85-533e-41a9-b70e-22e18d53c22f"
+              ]
+            },
+            "labels": [
+              "API Security Audit logs "
+            ],
+            "id": "935cd83f-74c8-4ad6-8771-eedead34a671",
+            "source": {
+              "cell": "74192d47-b35f-49d1-a792-ad0e3deb14cd",
+              "port": "2452231d-7260-4c23-bf3e-1efeaad069a7"
+            },
+            "target": {
+              "cell": "1cafc0a4-a2a2-41d8-b56f-6cdd59cc952b",
+              "port": "7abe17f7-3d4d-4b2a-a6e8-cddd52359712"
+            },
+            "vertices": []
           }
         ]
       }
