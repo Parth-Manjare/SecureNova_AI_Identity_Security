@@ -378,8 +378,8 @@
           },
           {
             "position": {
-              "x": 860,
-              "y": 130.00000000000023
+              "x": 910,
+              "y": 145.00000000000023
             },
             "size": {
               "width": 190,
@@ -498,8 +498,8 @@
           },
           {
             "position": {
-              "x": 1150,
-              "y": 115.00000000000023
+              "x": 1230,
+              "y": 40
             },
             "size": {
               "width": 160,
@@ -618,8 +618,8 @@
           },
           {
             "position": {
-              "x": 1135,
-              "y": 290
+              "x": 1210,
+              "y": 370
             },
             "size": {
               "width": 270,
@@ -743,7 +743,7 @@
           {
             "position": {
               "x": 790,
-              "y": 260
+              "y": 360
             },
             "size": {
               "width": 230,
@@ -862,8 +862,8 @@
           },
           {
             "position": {
-              "x": 910,
-              "y": 451.0000000000002
+              "x": 510,
+              "y": 620
             },
             "size": {
               "width": 340,
@@ -982,8 +982,8 @@
           },
           {
             "position": {
-              "x": 940,
-              "y": 691
+              "x": 1000,
+              "y": 700
             },
             "size": {
               "width": 300,
@@ -1315,7 +1315,213 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Knowledge Retrieval Request  ",
+              "name": "MCP Tool Invocation",
+              "description": "AI agent invokes approved MCP server tools using authenticated service credentials. The MCP server validates the identity, permissions and requested tool before execution.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "MCP Tool Invocation"
+            ],
+            "id": "296358af-49af-4eb5-ab33-145a8addaf5f",
+            "source": {
+              "x": 658,
+              "y": 285
+            },
+            "target": {
+              "cell": "544c5951-292f-4ea9-bd90-7a0430f6325e",
+              "port": "3ccfc94f-5513-4bf1-8ee7-7355cb13c526"
+            },
+            "vertices": [
+              {
+                "x": 658,
+                "y": 350
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Authenticated API Request ",
+              "description": "MCP server sends authenticated requests to internal REST APIs using scoped service credentials to retrieve customer records, order information or perform authorized support operations.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Authenticated API Request "
+            ],
+            "id": "aecdcf79-795a-49be-9cd7-45a8a5a875f5",
+            "source": {
+              "x": 895,
+              "y": 520
+            },
+            "target": {
+              "cell": "74192d47-b35f-49d1-a792-ad0e3deb14cd",
+              "port": "3ccfc94f-5513-4bf1-8ee7-7355cb13c526"
+            },
+            "vertices": [
+              {
+                "x": 995,
+                "y": 570
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "API Security Audit logs ",
+              "description": "Internal REST API sends security audit events, including API access attempts, authorization failures, identity information and operation results, to centralized logging and monitoring infrastructure.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "API Security Audit logs "
+            ],
+            "id": "935cd83f-74c8-4ad6-8771-eedead34a671",
+            "source": {
+              "x": 670,
+              "y": 780
+            },
+            "target": {
+              "cell": "1cafc0a4-a2a2-41d8-b56f-6cdd59cc952b",
+              "port": "7abe17f7-3d4d-4b2a-a6e8-cddd52359712"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Vector Search Query  ",
+              "description": "RAG pipeline generates embeddings and sends vector similarity search queries to the vector database to retrieve relevant knowledge chunks.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Vector Search Query  "
+            ],
+            "id": "312b9971-6a15-4097-979e-d82d0fcb945d",
+            "source": {
+              "x": 1310,
+              "y": 170
+            },
+            "target": {
+              "x": 1330,
+              "y": 370
+            },
+            "vertices": [
+              {
+                "x": 1300,
+                "y": 240
+              },
+              {
+                "x": 1240,
+                "y": 320
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Knowledge Retrieval Request ",
               "description": "AI agent sends a knowledge retrieval query to the RAG pipeline to obtain relevant information from the enterprise knowledge base.",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1329,172 +1535,27 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Knowledge Retrieval Request  "
+              "Knowledge Retrieval Request "
             ],
-            "id": "8fe1c6be-d76a-4c07-bac9-3d5ff6ed43ed",
+            "id": "cd610f32-9eb5-4bea-967a-aa94d8e4b853",
             "source": {
-              "x": 1050,
-              "y": 200
+              "cell": "ca005d16-91b8-467b-846f-fc41c8f1fcf0",
+              "port": "7078926b-98c0-4c37-aba6-b60272dcef98"
             },
             "target": {
-              "x": 1180,
-              "y": 140
+              "cell": "ace38ae9-a1b6-4ac0-a2cf-f03690611d42",
+              "port": "3ccfc94f-5513-4bf1-8ee7-7355cb13c526"
             },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            "vertices": [
+              {
+                "x": 1160,
+                "y": 160
+              },
+              {
+                "x": 1180,
+                "y": 70
+              }
+            ]
           }
         ]
       }
