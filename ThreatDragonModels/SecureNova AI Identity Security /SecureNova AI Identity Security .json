@@ -35,8 +35,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "82d94e08-c63c-44d7-94b6-0a7e74d7fc4b",
             "zIndex": -1,
+            "id": "82d94e08-c63c-44d7-94b6-0a7e74d7fc4b",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "TB 1 - External User Zone",
@@ -74,8 +74,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "479ba443-aff6-4979-8ffd-8a6f46aa24db",
             "zIndex": -1,
+            "id": "479ba443-aff6-4979-8ffd-8a6f46aa24db",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "TB 2 - Identity Provider Zone ",
@@ -107,8 +107,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "496185b0-727d-4e8b-9688-7aaeec9496ae",
             "zIndex": -1,
+            "id": "496185b0-727d-4e8b-9688-7aaeec9496ae",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "TB 3 - AI Application ",
@@ -146,8 +146,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "5d90baee-e308-4d76-adff-dfe18c72205e",
             "zIndex": -1,
+            "id": "5d90baee-e308-4d76-adff-dfe18c72205e",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "TB 4 - External LLM",
@@ -178,8 +178,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "f415fc85-533e-41a9-b70e-22e18d53c22f",
             "zIndex": -1,
+            "id": "f415fc85-533e-41a9-b70e-22e18d53c22f",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "TB 5 - Enterprise Backend ",
