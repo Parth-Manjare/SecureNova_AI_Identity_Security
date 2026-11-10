@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" pages="2">
+<mxfile host="app.diagrams.net" pages="3">
   <diagram name="Attack Tree 1" id="PQWfP1KI1uBc2fC95Rtr">
     <mxGraphModel dx="1622" dy="994" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -293,6 +293,171 @@
         </mxCell>
         <mxCell id="EYuKFbqZCnIO16AucoXu-47" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F1F5F9;strokeColor=#94A3B8;fontColor=#334155;fontSize=11;align=left;verticalAlign=middle;spacing=8;" value="&lt;b&gt;Scoring:&lt;/b&gt; Risk = Likelihood (1–5) × Impact (1–5). Scores are estimates; validate against actual controls and test evidence." vertex="1">
           <mxGeometry height="54" width="760" x="780" y="815" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="qxwqJeKUqs1vJ-eQdd7K" name="Attack Tree 3">
+    <mxGraphModel dx="1648" dy="1010" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="xHGxm236Nzkx08lV75Ib-1" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=none;strokeColor=none;fontSize=24;fontStyle=1;fontColor=#0F172A;" value="ATTACK TREE 3 — RAG CHUNK POISONING" vertex="1">
+          <mxGeometry height="38" width="1000" x="300" y="5" as="geometry" />
+        </mxCell>
+        <mxCell id="xHGxm236Nzkx08lV75Ib-2" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=none;strokeColor=none;fontSize=12;fontColor=#475569;" value="SecureNova AI Identity Security Capstone | Poisoning the knowledge corpus to influence retrieval and agent behaviour" vertex="1">
+          <mxGeometry height="24" width="1100" x="250" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="xHGxm236Nzkx08lV75Ib-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FEE2E2;strokeColor=#B91C1C;strokeWidth=2;fontColor=#7F1D1D;fontSize=18;fontStyle=1;align=center;verticalAlign=middle;spacing=8;" value="&lt;b&gt;GOAL: Poison the RAG knowledge base&lt;/b&gt;&lt;br&gt;&lt;font style=&#39;font-size:12px&#39;&gt;Cause the RAG pipeline to retrieve attacker-controlled or altered chunks that influence AI agent output or actions&lt;/font&gt;" vertex="1">
+          <mxGeometry height="82" width="600" x="500" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="xHGxm236Nzkx08lV75Ib-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FEF3C7;strokeColor=#D97706;strokeWidth=2;fontColor=#92400E;fontSize=16;fontStyle=1;" value="&lt;b&gt;OR&lt;/b&gt;" vertex="1">
+          <mxGeometry height="52" width="60" x="770" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="xHGxm236Nzkx08lV75Ib-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DBEAFE;strokeColor=#2563EB;strokeWidth=2;fontColor=#1E3A8A;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;spacing=7;" value="&lt;b&gt;1. Malicious document submitted through ingestion&lt;/b&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px&#39;&gt;L = 4 | I = 5 | Risk = 20/25 | &lt;b&gt;Critical&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="90" width="360" x="20" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="xHGxm236Nzkx08lV75Ib-6" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#DCFCE7;strokeColor=#15803D;strokeWidth=2;fontColor=#166534;fontSize=13;fontStyle=1;" value="&lt;b&gt;AND&lt;/b&gt;" vertex="1">
+          <mxGeometry height="46" width="60" x="170" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="xHGxm236Nzkx08lV75Ib-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#64748B;strokeWidth=1.5;fontColor=#0F172A;fontSize=11;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Step 1&lt;/b&gt;&lt;br&gt;Attacker obtains access to an approved document-upload or content-ingestion route" vertex="1">
+          <mxGeometry height="72" width="330" x="35" y="465" as="geometry" />
+        </mxCell>
+        <mxCell id="xHGxm236Nzkx08lV75Ib-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#64748B;strokeWidth=1.5;fontColor=#0F172A;fontSize=11;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Step 2&lt;/b&gt;&lt;br&gt;Malicious instructions or misleading content are embedded in a submitted document" vertex="1">
+          <mxGeometry height="72" width="330" x="35" y="557" as="geometry" />
+        </mxCell>
+        <mxCell id="xHGxm236Nzkx08lV75Ib-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#64748B;strokeWidth=1.5;fontColor=#0F172A;fontSize=11;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Step 3&lt;/b&gt;&lt;br&gt;Ingestion validation fails to reject the content and the document is chunked and indexed" vertex="1">
+          <mxGeometry height="72" width="330" x="35" y="649" as="geometry" />
+        </mxCell>
+        <mxCell id="xHGxm236Nzkx08lV75Ib-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ECFDF5;strokeColor=#16A34A;fontColor=#14532D;fontSize=10;align=left;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Defenses:&lt;/b&gt; restrict ingestion roles; validate source and file type; scan content; quarantine untrusted uploads; require approval for publication." vertex="1">
+          <mxGeometry height="78" width="330" x="35" y="755" as="geometry" />
+        </mxCell>
+        <mxCell id="xHGxm236Nzkx08lV75Ib-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DBEAFE;strokeColor=#2563EB;strokeWidth=2;fontColor=#1E3A8A;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;spacing=7;" value="&lt;b&gt;2. Trusted knowledge source compromised&lt;/b&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px&#39;&gt;L = 3 | I = 5 | Risk = 15/25 | &lt;b&gt;High&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="90" width="360" x="415" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="xHGxm236Nzkx08lV75Ib-12" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#DCFCE7;strokeColor=#15803D;strokeWidth=2;fontColor=#166534;fontSize=13;fontStyle=1;" value="&lt;b&gt;AND&lt;/b&gt;" vertex="1">
+          <mxGeometry height="46" width="60" x="565" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="xHGxm236Nzkx08lV75Ib-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#64748B;strokeWidth=1.5;fontColor=#0F172A;fontSize=11;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Step 1&lt;/b&gt;&lt;br&gt;Attacker compromises an account or integration with permission to edit an approved knowledge source" vertex="1">
+          <mxGeometry height="72" width="330" x="430" y="465" as="geometry" />
+        </mxCell>
+        <mxCell id="xHGxm236Nzkx08lV75Ib-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#64748B;strokeWidth=1.5;fontColor=#0F172A;fontSize=11;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Step 2&lt;/b&gt;&lt;br&gt;A trusted article, policy or support document is modified with malicious or false content" vertex="1">
+          <mxGeometry height="72" width="330" x="430" y="557" as="geometry" />
+        </mxCell>
+        <mxCell id="xHGxm236Nzkx08lV75Ib-15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#64748B;strokeWidth=1.5;fontColor=#0F172A;fontSize=11;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Step 3&lt;/b&gt;&lt;br&gt;The synchronization pipeline ingests the altered source and publishes its chunks" vertex="1">
+          <mxGeometry height="72" width="330" x="430" y="649" as="geometry" />
+        </mxCell>
+        <mxCell id="xHGxm236Nzkx08lV75Ib-16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ECFDF5;strokeColor=#16A34A;fontColor=#14532D;fontSize=10;align=left;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Defenses:&lt;/b&gt; enforce MFA and least privilege on source systems; review changes; retain version history; verify source provenance before sync." vertex="1">
+          <mxGeometry height="78" width="330" x="430" y="755" as="geometry" />
+        </mxCell>
+        <mxCell id="xHGxm236Nzkx08lV75Ib-17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DBEAFE;strokeColor=#2563EB;strokeWidth=2;fontColor=#1E3A8A;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;spacing=7;" value="&lt;b&gt;3. Unauthorized vector-store modification&lt;/b&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px&#39;&gt;L = 2 | I = 5 | Risk = 10/25 | &lt;b&gt;High&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="90" width="360" x="810" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="xHGxm236Nzkx08lV75Ib-18" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#DCFCE7;strokeColor=#15803D;strokeWidth=2;fontColor=#166534;fontSize=13;fontStyle=1;" value="&lt;b&gt;AND&lt;/b&gt;" vertex="1">
+          <mxGeometry height="46" width="60" x="960" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="xHGxm236Nzkx08lV75Ib-19" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#64748B;strokeWidth=1.5;fontColor=#0F172A;fontSize=11;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Step 1&lt;/b&gt;&lt;br&gt;Attacker compromises a RAG or database service identity with write permissions" vertex="1">
+          <mxGeometry height="72" width="330" x="825" y="465" as="geometry" />
+        </mxCell>
+        <mxCell id="xHGxm236Nzkx08lV75Ib-20" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#64748B;strokeWidth=1.5;fontColor=#0F172A;fontSize=11;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Step 2&lt;/b&gt;&lt;br&gt;The compromised identity reaches a vector collection or index without adequate isolation" vertex="1">
+          <mxGeometry height="72" width="330" x="825" y="557" as="geometry" />
+        </mxCell>
+        <mxCell id="xHGxm236Nzkx08lV75Ib-21" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#64748B;strokeWidth=1.5;fontColor=#0F172A;fontSize=11;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Step 3&lt;/b&gt;&lt;br&gt;Chunk text, metadata or embeddings are inserted, replaced or deleted" vertex="1">
+          <mxGeometry height="72" width="330" x="825" y="649" as="geometry" />
+        </mxCell>
+        <mxCell id="xHGxm236Nzkx08lV75Ib-22" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ECFDF5;strokeColor=#16A34A;fontColor=#14532D;fontSize=10;align=left;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Defenses:&lt;/b&gt; separate read and write identities; restrict collection-level permissions; protect credentials; log and review index mutations." vertex="1">
+          <mxGeometry height="78" width="330" x="825" y="755" as="geometry" />
+        </mxCell>
+        <mxCell id="xHGxm236Nzkx08lV75Ib-23" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DBEAFE;strokeColor=#2563EB;strokeWidth=2;fontColor=#1E3A8A;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;spacing=7;" value="&lt;b&gt;4. Ingestion or embedding pipeline tampered with&lt;/b&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px&#39;&gt;L = 3 | I = 4 | Risk = 12/25 | &lt;b&gt;High&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="90" width="360" x="1205" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="xHGxm236Nzkx08lV75Ib-24" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#DCFCE7;strokeColor=#15803D;strokeWidth=2;fontColor=#166534;fontSize=13;fontStyle=1;" value="&lt;b&gt;AND&lt;/b&gt;" vertex="1">
+          <mxGeometry height="46" width="60" x="1355" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="xHGxm236Nzkx08lV75Ib-25" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#64748B;strokeWidth=1.5;fontColor=#0F172A;fontSize=11;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Step 1&lt;/b&gt;&lt;br&gt;Attacker obtains access to the ingestion job, connector configuration or deployment pipeline" vertex="1">
+          <mxGeometry height="72" width="330" x="1220" y="465" as="geometry" />
+        </mxCell>
+        <mxCell id="xHGxm236Nzkx08lV75Ib-26" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#64748B;strokeWidth=1.5;fontColor=#0F172A;fontSize=11;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Step 2&lt;/b&gt;&lt;br&gt;Chunking, metadata mapping, embedding configuration or filtering logic is altered" vertex="1">
+          <mxGeometry height="72" width="330" x="1220" y="557" as="geometry" />
+        </mxCell>
+        <mxCell id="xHGxm236Nzkx08lV75Ib-27" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#64748B;strokeWidth=1.5;fontColor=#0F172A;fontSize=11;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Step 3&lt;/b&gt;&lt;br&gt;The pipeline indexes attacker-influenced representations or boosts malicious chunks in retrieval" vertex="1">
+          <mxGeometry height="72" width="330" x="1220" y="649" as="geometry" />
+        </mxCell>
+        <mxCell id="xHGxm236Nzkx08lV75Ib-28" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ECFDF5;strokeColor=#16A34A;fontColor=#14532D;fontSize=10;align=left;verticalAlign=middle;spacing=6;" value="&lt;b&gt;Defenses:&lt;/b&gt; protect CI/CD and pipeline configuration; review changes; pin approved model versions; validate metadata and embedding jobs; monitor retrieval anomalies." vertex="1">
+          <mxGeometry height="78" width="330" x="1220" y="755" as="geometry" />
+        </mxCell>
+        <mxCell id="xHGxm236Nzkx08lV75Ib-29" edge="1" parent="1" source="xHGxm236Nzkx08lV75Ib-3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#475569;strokeWidth=2;" target="xHGxm236Nzkx08lV75Ib-4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xHGxm236Nzkx08lV75Ib-30" edge="1" parent="1" source="xHGxm236Nzkx08lV75Ib-4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#475569;strokeWidth=2;" target="xHGxm236Nzkx08lV75Ib-5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xHGxm236Nzkx08lV75Ib-31" edge="1" parent="1" source="xHGxm236Nzkx08lV75Ib-5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#475569;strokeWidth=2;" target="xHGxm236Nzkx08lV75Ib-6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xHGxm236Nzkx08lV75Ib-32" edge="1" parent="1" source="xHGxm236Nzkx08lV75Ib-6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#475569;strokeWidth=2;" target="xHGxm236Nzkx08lV75Ib-7" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xHGxm236Nzkx08lV75Ib-33" edge="1" parent="1" source="xHGxm236Nzkx08lV75Ib-6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#475569;strokeWidth=2;" target="xHGxm236Nzkx08lV75Ib-8" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xHGxm236Nzkx08lV75Ib-34" edge="1" parent="1" source="xHGxm236Nzkx08lV75Ib-6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#475569;strokeWidth=2;" target="xHGxm236Nzkx08lV75Ib-9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xHGxm236Nzkx08lV75Ib-35" edge="1" parent="1" source="xHGxm236Nzkx08lV75Ib-4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#475569;strokeWidth=2;" target="xHGxm236Nzkx08lV75Ib-11" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xHGxm236Nzkx08lV75Ib-36" edge="1" parent="1" source="xHGxm236Nzkx08lV75Ib-11" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#475569;strokeWidth=2;" target="xHGxm236Nzkx08lV75Ib-12" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xHGxm236Nzkx08lV75Ib-37" edge="1" parent="1" source="xHGxm236Nzkx08lV75Ib-12" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#475569;strokeWidth=2;" target="xHGxm236Nzkx08lV75Ib-13" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xHGxm236Nzkx08lV75Ib-38" edge="1" parent="1" source="xHGxm236Nzkx08lV75Ib-12" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#475569;strokeWidth=2;" target="xHGxm236Nzkx08lV75Ib-14" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xHGxm236Nzkx08lV75Ib-39" edge="1" parent="1" source="xHGxm236Nzkx08lV75Ib-12" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#475569;strokeWidth=2;" target="xHGxm236Nzkx08lV75Ib-15" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xHGxm236Nzkx08lV75Ib-40" edge="1" parent="1" source="xHGxm236Nzkx08lV75Ib-4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#475569;strokeWidth=2;" target="xHGxm236Nzkx08lV75Ib-17" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xHGxm236Nzkx08lV75Ib-41" edge="1" parent="1" source="xHGxm236Nzkx08lV75Ib-17" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#475569;strokeWidth=2;" target="xHGxm236Nzkx08lV75Ib-18" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xHGxm236Nzkx08lV75Ib-42" edge="1" parent="1" source="xHGxm236Nzkx08lV75Ib-18" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#475569;strokeWidth=2;" target="xHGxm236Nzkx08lV75Ib-19" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xHGxm236Nzkx08lV75Ib-43" edge="1" parent="1" source="xHGxm236Nzkx08lV75Ib-18" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#475569;strokeWidth=2;" target="xHGxm236Nzkx08lV75Ib-20" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xHGxm236Nzkx08lV75Ib-44" edge="1" parent="1" source="xHGxm236Nzkx08lV75Ib-18" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#475569;strokeWidth=2;" target="xHGxm236Nzkx08lV75Ib-21" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xHGxm236Nzkx08lV75Ib-45" edge="1" parent="1" source="xHGxm236Nzkx08lV75Ib-4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#475569;strokeWidth=2;" target="xHGxm236Nzkx08lV75Ib-23" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1385" y="190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xHGxm236Nzkx08lV75Ib-46" edge="1" parent="1" source="xHGxm236Nzkx08lV75Ib-23" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#475569;strokeWidth=2;" target="xHGxm236Nzkx08lV75Ib-24" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xHGxm236Nzkx08lV75Ib-47" edge="1" parent="1" source="xHGxm236Nzkx08lV75Ib-24" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#475569;strokeWidth=2;" target="xHGxm236Nzkx08lV75Ib-25" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xHGxm236Nzkx08lV75Ib-48" edge="1" parent="1" source="xHGxm236Nzkx08lV75Ib-24" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#475569;strokeWidth=2;" target="xHGxm236Nzkx08lV75Ib-26" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xHGxm236Nzkx08lV75Ib-49" edge="1" parent="1" source="xHGxm236Nzkx08lV75Ib-24" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#475569;strokeWidth=2;" target="xHGxm236Nzkx08lV75Ib-27" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xHGxm236Nzkx08lV75Ib-50" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F1F5F9;strokeColor=#94A3B8;fontColor=#334155;fontSize=11;align=left;verticalAlign=middle;spacing=8;" value="&lt;b&gt;Logic:&lt;/b&gt; OR = any one attack path may achieve the goal. AND = all listed conditions in that path are assumed to be required." vertex="1">
+          <mxGeometry height="55" width="720" x="35" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="xHGxm236Nzkx08lV75Ib-51" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F1F5F9;strokeColor=#94A3B8;fontColor=#334155;fontSize=11;align=left;verticalAlign=middle;spacing=8;" value="&lt;b&gt;Scoring:&lt;/b&gt; Risk = Likelihood (1–5) × Impact (1–5). Scores are qualitative estimates; validate against implemented controls and evidence." vertex="1">
+          <mxGeometry height="55" width="760" x="780" y="860" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
