@@ -1,4 +1,4 @@
-# SecureNova AI Identity Security — Capstone Portfolio
+# SecureNova AI Identity Security
 
 A five-project capstone on threat modelling, identity and access management, adversarial testing, blue-team safeguards, and policy/compliance.
 
