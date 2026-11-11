@@ -1,0 +1,31 @@
+﻿# Environment files and secrets
+.env
+.env.*
+!.env.example
+secrets/
+*.pem
+*.key
+*.p12
+*.pfx
+*.token
+
+# Python-generated files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Execution logs
+logs/
+**/logs/
+
+# Generated assessment files
+05_CVSS_ATLAS/
+06_Evidence_Screenshots/
+07_Final_Report/
+
+# Generated spreadsheets and exports
+*.csv
+*.xlsx
+*.xls

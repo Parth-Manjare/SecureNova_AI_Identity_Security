@@ -1,0 +1,13 @@
+﻿Document Title: Identity Incident Response Guide
+Category: Security Operations
+
+When an identity-related security incident is reported:
+
+1. Record the incident reference number.
+2. Identify the affected account or application.
+3. Review the available authentication logs.
+4. Notify the security response team.
+5. Document the investigation and remediation steps.
+
+Sensitive account operations must follow the approved
+authorization and audit procedures.

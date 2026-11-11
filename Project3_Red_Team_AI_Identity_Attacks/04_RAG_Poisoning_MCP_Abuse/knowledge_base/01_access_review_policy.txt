@@ -1,0 +1,15 @@
+﻿Document Title: Access Review Policy
+Category: Identity and Access Management
+
+All user access must be reviewed periodically by the identity
+security team.
+
+The review process includes:
+1. Checking whether user accounts are still active.
+2. Reviewing assigned application permissions.
+3. Identifying stale or unused accounts.
+4. Requesting approval before making access changes.
+5. Recording completed reviews in the security audit log.
+
+Privileged access must be approved through the official
+identity governance process.
