@@ -64,22 +64,20 @@ async def auth_callback(request: Request):
     auth0 = oauth.create_client("auth0")
 
     try:
-        # Validates OAuth state and completes the token exchange.
-        # Authlib also validates the ID token because we request OIDC scopes.
         token = await auth0.authorize_access_token(request)
 
     except Exception:
         logger.exception("Auth0 callback failed during token exchange")
 
-    raise HTTPException(
-        status_code=400,
-        detail=(
-            "Auth0 login failed. Check the callback URL, "
-            "OAuth state and server configuration."
-        ),
-    ) from None
+        raise HTTPException(
+            status_code=400,
+            detail=(
+                "Auth0 login failed. Check the callback URL, "
+                "OAuth state and server configuration."
+            ),
+        ) from None
 
-    raise HT
+    # Continue with userinfo validation her
 
     userinfo = token.get("userinfo")
 
@@ -99,10 +97,6 @@ async def auth_callback(request: Request):
 	
 # TEMPORARY: Display access token for local JWT inspection.
 # Remove this after completing the screenshot.
-
-    print("ID TOKEN:", token.get("id_token"))
-    print("========================================\n")
-    print("ACCESS TOKEN:", token.get("access_token"))
 
     # Keep bearer tokens on the server, not in the signed browser cookie.
     session_id = secrets.token_urlsafe(32)
