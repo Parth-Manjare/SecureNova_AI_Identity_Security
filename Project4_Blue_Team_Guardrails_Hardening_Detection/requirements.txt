@@ -1,0 +1,2 @@
+cryptography==50.0.2
+nemoguardrails==0.24.1

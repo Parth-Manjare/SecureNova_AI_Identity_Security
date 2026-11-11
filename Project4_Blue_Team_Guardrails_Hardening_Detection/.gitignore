@@ -1,0 +1,25 @@
+﻿# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Cryptographic private keys
+keys/
+*.pem
+*.key
+
+# Generated logs and evidence
+logs/
+06_Evidence_Screenshots/
+07_Final_Report/
+
+# Generated reports
+*.csv
+*.xlsx
